@@ -1,0 +1,109 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Valentine's Day Card</title>\
+    <style>\
+        body \{\
+            font-family: Arial, sans-serif;\
+            background-color: #ffe6e6;\
+            text-align: center;\
+            padding: 50px;\
+        \}\
+        .container \{\
+            border: 2px solid #ff4d4d;\
+            border-radius: 15px;\
+            padding: 20px;\
+            background-color: #fff;\
+            max-width: 600px;\
+            margin: auto;\
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\
+        \}\
+        h1 \{\
+            color: #ff1a1a;\
+        \}\
+        p \{\
+            font-size: 1.2em;\
+            color: #333;\
+        \}\
+        .valentine-image \{\
+            width: 100%;\
+            max-width: 400px;\
+            border-radius: 10px;\
+        \}\
+        .button \{\
+            background-color: #ff1a1a;\
+            color: #fff;\
+            border: none;\
+            padding: 10px 20px;\
+            text-decoration: none;\
+            border-radius: 5px;\
+            display: inline-block;\
+            margin-top: 20px;\
+            font-size: 1em;\
+        \}\
+        .button:hover \{\
+            background-color: #e60000;\
+        \}\
+        .popup \{\
+            display: none;\
+            position: fixed;\
+            top: 50%;\
+            left: 50%;\
+            transform: translate(-50%, -50%);\
+            padding: 20px;\
+            background-color: #fff;\
+            border: 2px solid #ff4d4d;\
+            border-radius: 15px;\
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\
+            z-index: 1000;\
+        \}\
+        .popup h2 \{\
+            color: #ff1a1a;\
+        \}\
+        .popup button \{\
+            background-color: #ff1a1a;\
+            color: #fff;\
+            border: none;\
+            padding: 10px 20px;\
+            text-decoration: none;\
+            border-radius: 5px;\
+            font-size: 1em;\
+            margin-top: 20px;\
+        \}\
+        .popup button:hover \{\
+            background-color: #e60000;\
+        \}\
+    </style>\
+</head>\
+<body>\
+    <div class="container">\
+        <h1>Happy Valentine's Day!</h1>\
+        <img src="https://www.example.com/valentine-image.jpg" alt="Valentine's Day" class="valentine-image">\
+        <p>Wishing you a day filled with love and happiness. Click the button below for a special message!</p>\
+        <button class="button" onclick="showPopup()">Open the Letter</button>\
+    </div>\
+    <div class="popup" id="popup">\
+        <h2>Happy Valentine's Day, Yemi!</h2>\
+        <button onclick="closePopup()">Close</button>\
+    </div>\
+    <script>\
+        function showPopup() \{\
+            document.getElementById('popup').style.display = 'block';\
+        \}\
+\
+        function closePopup() \{\
+            document.getElementById('popup').style.display = 'none';\
+        \}\
+    </script>\
+</body>\
+</html>\
+}
